@@ -13,16 +13,82 @@
             background-attachment: fixed;
             background-position: center;
         }
-        
+
+        header {
+            display: flex;
+            justify-content: center;
+        }
+
         .conteiner-img {
             width: 500px;
             height: 300px;
             object-position: top;
             object-fit: cover;
-        } 
-        .conteiner-modelos {
-            width: 200px;
-            height: 300px;
+        }
+
+        .conteiner-modelo-1 {
+            width: 400px;
+            height: 500px;
+            padding: 10px;
+        }
+
+        .conteiner-modelo-2 {
+            width: 400px;
+            height: 500px;
+            padding: 10px;
+        }
+
+        .conteiner-modelo-3 {
+            width: 400px;
+            height: 500px;
+            padding: 10px;
+        }
+
+        .conteiner-modelo-4 {
+            width: 400px;
+            height: 500px;
+            padding: 10px;
+        }
+
+        h3 {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            font-size: 30px;
+            margin: 20px 0;
+            padding: 20px;
+            font-style: italic;
+            color: rgb(196, 172, 39);
+        }
+
+        .modelo {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 300px;
+            height: 1200px;
+            flex-direction: column;
+            gap: 20px;
+            margin-left: 200px;
+        }
+
+        main {
+            width: 300px;
+            height: 1300px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            background-color: gold;
+            padding: 10px 20px;
+            margin: 30px;
+            gap: 10px;
+            width: 500px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgb(255, 215, 0);
         }
     </style>
 </head>
@@ -35,19 +101,21 @@
         </nav>
     </header>
     <main>
-        <h3>modelos</h3>
-        <div>
-            <img class="conteiner-modelos" src="asset/img/ChatGPT Image 23 jun 2026, 14_33_08.png" alt="1">
-        </div>
-        <div>
-            <img class="conteiner-modelos" src="asset/img/ChatGPT Image 23 jun 2026, 14_33_15.png" alt="2">
-        </div>
-        <div>
-            <img class="conteiner-modelos" src="asset/img/ChatGPT Image 23 jun 2026, 14_33_23.png" alt="3">
-        </div>
-        <div>
-            <img class="conteiner-modelos" src="asset/img/ChatGPT Image 23 jun 2026, 14_33_29.png" alt="4">
-        </div>
+        <h3>MODELOS</h3>
+        <section class="modelo">
+            <div>
+                <img class="conteiner-modelo-1" src="asset/img/ChatGPT Image 23 jun 2026, 14_33_08.png" alt="1">
+            </div>
+            <div>
+                <img class="conteiner-modelo-2" src="asset/img/ChatGPT Image 23 jun 2026, 14_33_15.png" alt="2">
+            </div>
+            <div>
+                <img class="conteiner-modelo-3" src="asset/img/ChatGPT Image 23 jun 2026, 14_33_23.png" alt="3">
+            </div>
+            <div>
+                <img class="conteiner-modelo-4" src="asset/img/ChatGPT Image 23 jun 2026, 14_33_29.png" alt="4">
+            </div>
+        </section>
     </main>
     <footer>
         <h4>miranos por aca tambien</h4>
