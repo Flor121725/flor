@@ -1,37 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estaciones</title>
     <style>
-         body {
+        body {
             background-image: url(asset/img/new\ york.png);
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
         }
-        .container-invierno{
+
+        h2 {
+            display: flex;
+            justify-content: center;
+            color: rgb(245, 214, 37);
+        }
+
+        .container-invierno {
             width: 400px;
             height: 500px;
             padding: 10px;
         }
-        .container-otoño{
+
+        .container-otoño {
             width: 400px;
             height: 500px;
             padding: 10px;
+        }
+
+        h3 {
+            color: white;
+            justify-content: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            align-items: flex-start;
+        }
+
+        .container-outfit {
+            text-align: center;
+        }
+
+        p{
+            color: white;
         }
     </style>
 </head>
+
 <body>
     <header>
-    <div >
-    <img class="container-invierno" src="asset/img/coleccion de invierno.jpg" alt="invierno">
-    </div>
-    <div >
-    <img  class="container-otoño"src="asset/img/coleccion de otoño.jpg" alt="otoño">
-    </div>
+        <a href="index.html">
+            <h2>La mejor coleccion de ropa de <br> Invierno y Otoño</h2>
+        </a>
+        <section class="container">
+            <div class="container-outfit">
+                <h3>El mejor outfit de la coleccion de invierno</h3>
+                <img class="container-invierno" src="asset/img/coleccion de invierno.jpg" alt="invierno">
+                <p>Este outfit pertenece a la colección Fall 2025 Ready-to-Wear de la marca Sergio Hudson,
+                    diseñada por el propio Sergio Hudson. Fue presentado el 7 de febrero de 2025 durante la
+                    New York Fashion Week, realizada en la ciudad de Nueva York, Estados Unidos. El conjunto
+                    está compuesto por una blusa negra de escote barco, un cinturón fino que marca la cintura, una falda
+                    midi de corte recto y botines blancos. Este diseño refleja el estilo elegante y minimalista
+                    característico de Sergio Hudson, con una propuesta moderna y sofisticada para la temporada de
+                    otoño/invierno.
+                </p>
+            </div>
+            <div class="container-outfit">
+                <h3>El mejor outfit de la coleccion de otoño </h3>
+                <img class="container-otoño" src="asset/img/coleccion de otoño.jpg" alt="otoño">
+                <p>Este outfit pertenece a la colección Fall 2025 Ready-to-Wear de la marca COS, diseñada por
+                    Karin Gustafsson, directora de diseño de la firma. Fue presentado el 14 de septiembre de
+                    2025 durante la New York Fashion Week, realizada en la ciudad de Nueva York, Estados
+                    Unidos. La colección, titulada "Dark Romance", se caracteriza por una estética minimalista y
+                    sofisticada, con una paleta de colores oscuros como azul marino, gris, borgoña y negro. El look
+                    combina líneas limpias, una silueta elegante y materiales de alta calidad, reflejando el estilo
+                    moderno y funcional que caracteriza a la marca COS.
+                </p>
+            </div>
+        </section>
     </header>
 </body>
+
 </html>
