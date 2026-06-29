@@ -20,89 +20,144 @@
             color: rgb(245, 214, 37);
         }
 
+        a {
+            text-decoration: none;
+            color: black;
+            padding: 20px;
+            font-style: italic;
+        }
+
+        button {
+            background-color: rgba(243, 243, 23, 0.774);
+            color: rgb(116, 106, 54);
+            transform: scale(1.1);
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
         .container-form {
             color: white;
+            padding: 20px;
+        }
+
+        label {
+            color: white;
+        }
+
+        .comentario {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
             padding: 28px;
         }
-        label{
-            color: white;
+
+        .textarea {
+            background-color: rgba(223, 195, 38, 0.664);
+        }
+
+        p {
+            background-color: rgba(5, 4, 4, 0.479);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 23px;
         }
     </style>
 </head>
 
 <body>
+    <a href="index.html">
+        <h2>Fashion Week</h2>
+    </a>
     <section class="container">
-     <a href="index.html"><h2>Fashion Week</h2></a>
-    <form action="">
-        <div class="container-form">
-            <p>¿cual es tu puntuacion al outfit de la coleccion de Invierno?</p>
-            <label for="gustos1">★☆☆☆☆1</label>
-            <input type="radio" name="gustos" id="gustos1" value="1">
-            <label for="gustos2">★★☆☆☆2</label>
-            <input type="radio" name="gustos" id="gustos2" value="2">
-            <label for="gustos3">★★★☆☆3</label>
-            <input type="radio" name="gustos" id="gustos3" value="3">
-            <label for="gustos4">★★★★☆4</label>
-            <input type="radio" name="gustos" id="gustos4" value="4">
-            <label for="gustos5">★★★★★5</label>
-            <input type="radio" name="gustos" id="gustos5" value="5">
-        </div>
-        <div>
-            <label for="textarea">deja tu comentario aca</label> 
-            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
-        </div>
-        <div class="container-form">
-            <p>¿cual es tu puntuacion al outfit de la coleccion de Otoño?</p>
-            <label for="gustos1">★☆☆☆☆1</label>
-            <input type="radio" name="gustos" id="gustos1" value="1">
-            <label for="gustos2">★★☆☆☆2</label>
-            <input type="radio" name="gustos" id="gustos2" value="2">
-            <label for="gustos3">★★★☆☆3</label>
-            <input type="radio" name="gustos" id="gustos3" value="3">
-            <label for="gustos4">★★★★☆4</label>
-            <input type="radio" name="gustos" id="gustos4" value="4">
-            <label for="gustos5">★★★★★5</label>
-            <input type="radio" name="gustos" id="gustos5" value="5">
-        </div>
-        <div>
-            <label for="textarea">deja tu comentario aca</label>
-            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
-        </div>
-        <div class="container-form">
-            <p>¿cual es tu puntuacion al outfit de la coleccion de Resort?</p>
-            <label for="gustos1">★☆☆☆☆1</label>
-            <input type="radio" name="gustos" id="gustos1" value="1">
-            <label for="gustos2">★★☆☆☆2</label>
-            <input type="radio" name="gustos" id="gustos2" value="2">
-            <label for="gustos3">★★★☆☆3</label>
-            <input type="radio" name="gustos" id="gustos3" value="3">
-            <label for="gustos4">★★★★☆4</label>
-            <input type="radio" name="gustos" id="gustos4" value="4">
-            <label for="gustos5">★★★★★5</label>
-            <input type="radio" name="gustos" id="gustos5" value="5">
-        </div>
-        <div>
-            <label for="textarea">deja tu comentario aca</label>
-            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
-        </div>
-        <div class="container-form">
-            <p>¿cual es tu puntuacion al outfit de la coleccion de Primavera?</p>
-            <label for="gustos1">★☆☆☆☆1</label>
-            <input type="radio" name="gustos" id="gustos1" value="1">
-            <label for="gustos2">★★☆☆☆2</label>
-            <input type="radio" name="gustos" id="gustos2" value="2">
-            <label for="gustos3">★★★☆☆3</label>
-            <input type="radio" name="gustos" id="gustos3" value="3">
-            <label for="gustos4">★★★★☆4</label>
-            <input type="radio" name="gustos" id="gustos4" value="4">
-            <label for="gustos5">★★★★★5</label>
-            <input type="radio" name="gustos" id="gustos5" value="5">
-        </div>
-        <div >
-            <label  for="textarea">deja tu comentario aca</label>
-            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
-        </div>
-    </form>
+        <form action="">
+            <div class="container-form">
+                <p>¿cual es tu puntuacion al outfit de la coleccion de Invierno?</p>
+                <label for="gustos1">★☆☆☆☆1</label>
+                <input type="radio" name="gustos" id="gustos1" value="1">
+                <label for="gustos2">★★☆☆☆2</label>
+                <input type="radio" name="gustos" id="gustos2" value="2">
+                <label for="gustos3">★★★☆☆3</label>
+                <input type="radio" name="gustos" id="gustos3" value="3">
+                <label for="gustos4">★★★★☆4</label>
+                <input type="radio" name="gustos" id="gustos4" value="4">
+                <label for="gustos5">★★★★★5</label>
+                <input type="radio" name="gustos" id="gustos5" value="5">
+            </div>
+            <button><a href="https://www.vogue.com/fashion-shows/fall-2025-ready-to-wear/sergio-hudson">coleccion de
+                    invierno</a></button>
+            <div class="comentario">
+                <label for="textarea">deja tu comentario aca</label>
+                <textarea class="textarea" name="textarea" id="textarea" cols="30" rows="10"></textarea>
+                <button>enviar</button>
+            </div>
+            <div class="container-form">
+                <p>¿cual es tu puntuacion al outfit de la coleccion de Otoño?</p>
+                <label for="gustos1">★☆☆☆☆1</label>
+                <input type="radio" name="gustos" id="gustos1" value="1">
+                <label for="gustos2">★★☆☆☆2</label>
+                <input type="radio" name="gustos" id="gustos2" value="2">
+                <label for="gustos3">★★★☆☆3</label>
+                <input type="radio" name="gustos" id="gustos3" value="3">
+                <label for="gustos4">★★★★☆4</label>
+                <input type="radio" name="gustos" id="gustos4" value="4">
+                <label for="gustos5">★★★★★5</label>
+                <input type="radio" name="gustos" id="gustos5" value="5">
+            </div>
+            <button><a href="https://www.cos.com/en-us/runway/autumn-winter-2025">coleccion de otoño</a></button>
+            <div class="comentario">
+                <label for="textarea">deja tu comentario aca</label>
+                <textarea class="textarea" name="textarea" id="textarea" cols="30" rows="10"></textarea>
+                <button>enviar</button>
+            </div>
+            <div class="container-form">
+                <p>¿cual es tu puntuacion al outfit de la coleccion de Resort?</p>
+                <label for="gustos1">★☆☆☆☆1</label>
+                <input type="radio" name="gustos" id="gustos1" value="1">
+                <label for="gustos2">★★☆☆☆2</label>
+                <input type="radio" name="gustos" id="gustos2" value="2">
+                <label for="gustos3">★★★☆☆3</label>
+                <input type="radio" name="gustos" id="gustos3" value="3">
+                <label for="gustos4">★★★★☆4</label>
+                <input type="radio" name="gustos" id="gustos4" value="4">
+                <label for="gustos5">★★★★★5</label>
+                <input type="radio" name="gustos" id="gustos5" value="5">
+            </div>
+            <button><a
+                    href="https://wwd.com/fashion-news/shows-reviews/gallery/sergio-hudson-resort-2026-collection-photos-1237925993/">coleccion
+                    de resort</a></button>
+            <div class="comentario">
+                <label for="textarea">deja tu comentario aca</label>
+                <textarea class="textarea" name="textarea" id="textarea" cols="30" rows="10"></textarea>
+                <button>enviar</button>
+            </div>
+            <div class="container-form">
+                <p>¿cual es tu puntuacion al outfit de la coleccion de Primavera?</p>
+                <label for="gustos1">★☆☆☆☆1</label>
+                <input type="radio" name="gustos" id="gustos1" value="1">
+                <label for="gustos2">★★☆☆☆2</label>
+                <input type="radio" name="gustos" id="gustos2" value="2">
+                <label for="gustos3">★★★☆☆3</label>
+                <input type="radio" name="gustos" id="gustos3" value="3">
+                <label for="gustos4">★★★★☆4</label>
+                <input type="radio" name="gustos" id="gustos4" value="4">
+                <label for="gustos5">★★★★★5</label>
+                <input type="radio" name="gustos" id="gustos5" value="5">
+            </div>
+            <button><a
+                    href="https://wwd.com/fashion-news/shows-reviews/gallery/sergio-hudson-spring-2026-ready-to-wear-photos-1238148138/">coleccion
+                    de primavera</a></button>
+            <div class="comentario">
+                <label for="textarea">deja tu comentario aca</label>
+                <textarea class="textarea" name="textarea" id="textarea" cols="30" rows="10"></textarea>
+                <button>enviar</button>
+            </div>
+        </form>
     </section>
 </body>
 
