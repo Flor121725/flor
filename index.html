@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>proyecto final</title>
     <style>
+        /*el background-image: url(la foto); sirve para poner la foto de fondo
+        background-repeat:no-repeat; sirve para que no se repita tantas veces
+        background-size: cover; sirve para definir la dimencion
+        background-attachment: fixed; sirve para que al mover el contenido se quede quieto 
+        background-position: center; sirve para que quede centrada en ese lugar*/
         body {
             background-image: url(asset/img/new\ york.png);
             background-repeat: no-repeat;
@@ -23,7 +28,9 @@
             width: 500px;
             height: 300px;
             object-position: top;
+            /*sirve para que aparezca visible la imagen, mantener la relacion de lo seleccionado*/
             object-fit: cover;
+            /*sirve para que si la imagen no coincide con el*/
         }
 
         .conteiner-modelo-1 {
@@ -78,7 +85,6 @@
         main {
             width: 1200px;
             margin: 0 auto;
-            justify-content: center;
         }
 
         .container-mo {
@@ -87,13 +93,17 @@
         }
 
         .container-boton {
+            width: 400px;
             height: 40px;
             background-color: rgb(236, 215, 94);
         }
-        a{
+
+        /*el text-decoration: none; sirve para sacarle la barrita de abajo de un link*/
+        a {
             text-decoration: none;
         }
-        .container-a{
+
+        .container-a {
             color: rgb(34, 31, 31);
             font-size: 15px;
             font-style: italic;
@@ -101,7 +111,7 @@
         }
 
         .container-boton:hover {
-            background-color:rgb(236, 215, 94) ;
+            background-color: rgb(236, 215, 94);
             color: rgb(136, 116, 0);
             transform: scale(1.1);
             transition: transform 0.3 ease;
@@ -128,28 +138,36 @@
                 alt="moda">
         </nav>
     </header>
+    <!--en el header puse la imagen pricipal que seria el logo e este proyecto, que esta en un nav y dentro del nav esta
+    la otra etiqueta de img donde tambien vincule el a que el "a" es para poner links y puse como link "fashion.html"-->
     <main>
         <h3>MODELOS</h3>
         <section class="modelo">
-            <div class="container-mo">
+            <!--agrugue la section para tener un orden para cuando haga el css y poder ponerle color y muchas otras cosas-->
+
+            <!--div: puse 4 div para poder separar las imagenes y el boton de cada uno, y poder ponerle clases a cada div para poder pasarlo a css y colocarle muchas cosas y decorarlo-->
+            <!--cambie el div por el articule ya que para cada img va un article-->
+            <article class="container-mo">
                 <img class="conteiner-modelo-1" src="asset/img/ChatGPT Image 23 jun 2026, 14_33_08.png" alt="1">
                 <button class="container-boton"><a class="container-a" href="fashion.html">Mas info</a></button>
-
-            </div>
-            <div class="container-mo">
+            </article>
+            <article class="container-mo">
                 <img class="conteiner-modelo-2" src="asset/img/ChatGPT Image 23 jun 2026, 14_33_15.png" alt="2">
                 <button class="container-boton"><a class="container-a" href="estaciones.html">Mas info</a></button>
-            </div>
-            <div class="container-mo">
+            </article>
+            <article>
                 <img class="conteiner-modelo-3" src="asset/img/ChatGPT Image 23 jun 2026, 14_33_23.png" alt="3">
                 <button class="container-boton"><a class="container-a" href="estacion.html">Mas info</a></button>
-            </div>
-            <div class="container-mo">
+            </article>
+            <article class="container-mo">
                 <img class="conteiner-modelo-4" src="asset/img/ChatGPT Image 23 jun 2026, 14_33_29.png" alt="4">
                 <button class="container-boton"><a class="container-a" href="final.html">Mas info</a></button>
-            </div>
+            </article>
+
         </section>
     </main>
+    <!--puse el main para tener un margen y poder colocarle un margin y tener como un maximo o minimo  de tantos px en el css 
+    y poder colocar las img como vos quieras o textos y agregarle color al texto o al las fotos con difuminacion o color de fondo -->
     <footer>
         <h4>Más sobre nosotros en:</h4>
         <ul>
@@ -157,6 +175,10 @@
             <li><a href="https://www.instagram.com/fashionweek/" target="_blank">📷instragram</a></li>
         </ul>
     </footer>
+    <!--footer: el footer lo hice fue que agregar las paginas de mi proyecto para que otras personas 
+    al mirar este proyecto puedan entrar y ver otras csoas de lo que yo arme,
+    y en el css poder ponerle color y acomodar los links con "a" y que pueda verse al verlo en pantalla ya armado,
+    y entan metidos en una lista para que se vea mas ordenado y mas lindo-->
 </body>
 
 </html>
